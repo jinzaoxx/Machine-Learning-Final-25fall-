@@ -37,12 +37,20 @@ class XSimGCL(LightGCN):
 		self.eps = args.eps
 		self.tau = args.tau
 
-
+	#高斯分布
 	def _sample_noise(self, shape):
 		noise = torch.randn(shape, device=self.device)
 		noise = F.normalize(noise, dim=1)  # L2 归一化
 		sign = torch.randint(0, 2, (shape[0],), device=self.device).float().unsqueeze(1) * 2.0 - 1.0
 		return sign * self.eps * noise
+
+	# #均匀分布
+	# def _sample_noise(self, embedding):
+	# 	noise = torch.rand_like(embedding, device=self.device)
+	# 	noise = noise * torch.sign(embedding)
+	# 	return F.normalize(noise, dim=-1) * self.eps
+
+
 
 	# src/models/general/XSimGCL.py
 	# vvv  请添加这个全新的辅助函数 vvv
@@ -79,6 +87,8 @@ class XSimGCL(LightGCN):
 		user_emb_base = self.encoder.embedding_dict['user_emb']
 		item_emb_base = self.encoder.embedding_dict['item_emb']
 
+
+		#这是原本的为了高斯分布的
 		# 2. 创建视图 1 (带噪声)
 		user_v1 = user_emb_base + self._sample_noise(user_emb_base.shape)
 		item_v1 = item_emb_base + self._sample_noise(item_emb_base.shape)
@@ -86,6 +96,15 @@ class XSimGCL(LightGCN):
 		# 3. 创建视图 2 (带噪声)
 		user_v2 = user_emb_base + self._sample_noise(user_emb_base.shape)
 		item_v2 = item_emb_base + self._sample_noise(item_emb_base.shape)
+
+		# #新：为均匀分布
+		# # 2. 创建视图 1 (带噪声)
+		# user_v1 = user_emb_base + self._sample_noise(user_emb_base)  # 正确：直接传 Tensor
+		# item_v1 = item_emb_base + self._sample_noise(item_emb_base)
+
+		# # 3. 创建视图 2 (带噪声)
+		# user_v2 = user_emb_base + self._sample_noise(user_emb_base)
+		# item_v2 = item_emb_base + self._sample_noise(item_emb_base)
 
 		# 4. 对两个视图分别进行图传播 (使用我们刚添加的 _propagate)
 		final_user_v1_all, final_item_v1_all = self._propagate(user_v1, item_v1)
