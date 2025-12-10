@@ -1,0 +1,290 @@
+INFO:root:Namespace(model_name='XSimGCL', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-09 20:15:54 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 200                 
+ eps                | 0.1                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ n_layers           | 3                   
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ reg_weight         | 1e-05               
+ save_final_results | 1                   
+ tau                | 0.1                 
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food/BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:XSimGCL(
+  (encoder): LGCNEncoder(
+    (embedding_dict): ParameterDict(
+        (item_emb): Parameter containing: [torch.cuda.FloatTensor of size 8714x64 (cuda:0)]
+        (user_emb): Parameter containing: [torch.cuda.FloatTensor of size 14682x64 (cuda:0)]
+    )
+  )
+)
+INFO:root:Namespace(model_name='XSimGCL', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-09 20:20:10 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 200                 
+ eps                | 0.1                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ n_layers           | 3                   
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ reg_weight         | 1e-05               
+ save_final_results | 1                   
+ tau                | 0.1                 
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food/BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:XSimGCL(
+  (encoder): LGCNEncoder(
+    (embedding_dict): ParameterDict(
+        (item_emb): Parameter containing: [torch.cuda.FloatTensor of size 8714x64 (cuda:0)]
+        (user_emb): Parameter containing: [torch.cuda.FloatTensor of size 14682x64 (cuda:0)]
+    )
+  )
+)
+INFO:root:Namespace(model_name='XSimGCL', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-09 20:22:59 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 200                 
+ eps                | 0.1                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ n_layers           | 3                   
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ reg_weight         | 1e-05               
+ save_final_results | 1                   
+ tau                | 0.1                 
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food/BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:XSimGCL(
+  (encoder): LGCNEncoder(
+    (embedding_dict): ParameterDict(
+        (item_emb): Parameter containing: [torch.cuda.FloatTensor of size 8714x64 (cuda:0)]
+        (user_emb): Parameter containing: [torch.cuda.FloatTensor of size 14682x64 (cuda:0)]
+    )
+  )
+)
+INFO:root:Test Before Training: (HR@5:0.0483,NDCG@5:0.0282,HR@10:0.0982,NDCG@10:0.0441,HR@20:0.1990,NDCG@20:0.0692,HR@50:0.4999,NDCG@50:0.1279)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.5144 [10.3 s]	dev=(HR@5:0.2926,NDCG@5:0.1966) [0.2 s] *
+INFO:root:Epoch 2     loss=0.4082 [9.1 s]	dev=(HR@5:0.3310,NDCG@5:0.2288) [0.2 s] *
+INFO:root:Epoch 3     loss=0.3593 [8.9 s]	dev=(HR@5:0.3605,NDCG@5:0.2525) [0.2 s] *
+INFO:root:Epoch 4     loss=0.3209 [8.9 s]	dev=(HR@5:0.3821,NDCG@5:0.2690) [0.2 s] *
+INFO:root:Epoch 5     loss=0.2916 [8.9 s]	dev=(HR@5:0.3947,NDCG@5:0.2789) [0.2 s] *
+INFO:root:Epoch 6     loss=0.2704 [8.9 s]	dev=(HR@5:0.4047,NDCG@5:0.2864) [0.2 s] *
+INFO:root:Epoch 7     loss=0.2549 [8.9 s]	dev=(HR@5:0.4107,NDCG@5:0.2902) [0.2 s] *
+INFO:root:Epoch 8     loss=0.2420 [9.0 s]	dev=(HR@5:0.4149,NDCG@5:0.2935) [0.2 s] *
+INFO:root:Epoch 9     loss=0.2305 [9.1 s]	dev=(HR@5:0.4199,NDCG@5:0.2971) [0.2 s] *
+INFO:root:Epoch 10    loss=0.2218 [8.9 s]	dev=(HR@5:0.4233,NDCG@5:0.3002) [0.2 s] *
+INFO:root:Epoch 11    loss=0.2130 [8.9 s]	dev=(HR@5:0.4268,NDCG@5:0.3026) [0.2 s] *
+INFO:root:Epoch 12    loss=0.2046 [8.9 s]	dev=(HR@5:0.4276,NDCG@5:0.3038) [0.2 s] *
+INFO:root:Epoch 13    loss=0.1978 [8.9 s]	dev=(HR@5:0.4317,NDCG@5:0.3067) [0.2 s] *
+INFO:root:Epoch 14    loss=0.1912 [8.9 s]	dev=(HR@5:0.4326,NDCG@5:0.3081) [0.2 s] *
+INFO:root:Namespace(model_name='XSimGCL', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-09 20:34:42 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ batch_size         | 256                 
+ data_appendix      |                     
+ dataset            | Grocery_and_Gourm...
+ dropout            | 0                   
+ early_stop         | 10                  
+ emb_size           | 64                  
+ epoch              | 200                 
+ eps                | 0.1                 
+ eval_batch_size    | 256                 
+ gpu                | 0                   
+ l2                 | 1e-06               
+ lr                 | 0.001               
+ main_metric        |                     
+ n_layers           | 3                   
+ num_neg            | 1                   
+ num_workers        | 0                   
+ optimizer          | Adam                
+ random_seed        | 0                   
+ reg_weight         | 1e-05               
+ save_final_results | 1                   
+ tau                | 0.1                 
+ test_all           | 0                   
+ topk               | 5,10,20,50          
+===========================================
+INFO:root:Device: cuda
+INFO:root:Load corpus from data/Grocery_and_Gourmet_Food/BaseReader.pkl
+INFO:root:#params: 1497344
+INFO:root:XSimGCL(
+  (encoder): LGCNEncoder(
+    (embedding_dict): ParameterDict(
+        (item_emb): Parameter containing: [torch.cuda.FloatTensor of size 8714x64 (cuda:0)]
+        (user_emb): Parameter containing: [torch.cuda.FloatTensor of size 14682x64 (cuda:0)]
+    )
+  )
+)
+INFO:root:Test Before Training: (HR@5:0.0483,NDCG@5:0.0282,HR@10:0.0982,NDCG@10:0.0441,HR@20:0.1990,NDCG@20:0.0692,HR@50:0.4999,NDCG@50:0.1279)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.5144 [10.4 s]	dev=(HR@5:0.2926,NDCG@5:0.1966) [0.2 s] *
+INFO:root:Epoch 2     loss=0.4082 [9.4 s]	dev=(HR@5:0.3310,NDCG@5:0.2288) [0.2 s] *
+INFO:root:Epoch 3     loss=0.3593 [9.1 s]	dev=(HR@5:0.3605,NDCG@5:0.2525) [0.2 s] *
+INFO:root:Epoch 4     loss=0.3209 [9.1 s]	dev=(HR@5:0.3821,NDCG@5:0.2690) [0.2 s] *
+INFO:root:Epoch 5     loss=0.2916 [9.1 s]	dev=(HR@5:0.3947,NDCG@5:0.2789) [0.2 s] *
+INFO:root:Epoch 6     loss=0.2704 [9.1 s]	dev=(HR@5:0.4047,NDCG@5:0.2864) [0.2 s] *
+INFO:root:Epoch 7     loss=0.2549 [9.2 s]	dev=(HR@5:0.4107,NDCG@5:0.2902) [0.2 s] *
+INFO:root:Epoch 8     loss=0.2420 [9.1 s]	dev=(HR@5:0.4149,NDCG@5:0.2935) [0.2 s] *
+INFO:root:Epoch 9     loss=0.2305 [9.1 s]	dev=(HR@5:0.4199,NDCG@5:0.2971) [0.2 s] *
+INFO:root:Epoch 10    loss=0.2218 [9.3 s]	dev=(HR@5:0.4233,NDCG@5:0.3002) [0.2 s] *
+INFO:root:Epoch 11    loss=0.2130 [9.1 s]	dev=(HR@5:0.4268,NDCG@5:0.3026) [0.2 s] *
+INFO:root:Epoch 12    loss=0.2046 [9.3 s]	dev=(HR@5:0.4276,NDCG@5:0.3038) [0.2 s] *
+INFO:root:Epoch 13    loss=0.1978 [9.7 s]	dev=(HR@5:0.4317,NDCG@5:0.3067) [0.2 s] *
+INFO:root:Epoch 14    loss=0.1912 [9.3 s]	dev=(HR@5:0.4326,NDCG@5:0.3081) [0.2 s] *
+INFO:root:Epoch 15    loss=0.1813 [9.3 s]	dev=(HR@5:0.4329,NDCG@5:0.3090) [0.2 s] *
+INFO:root:Epoch 16    loss=0.1776 [9.2 s]	dev=(HR@5:0.4349,NDCG@5:0.3105) [0.2 s] *
+INFO:root:Epoch 17    loss=0.1702 [9.0 s]	dev=(HR@5:0.4361,NDCG@5:0.3108) [0.2 s] *
+INFO:root:Epoch 18    loss=0.1675 [9.2 s]	dev=(HR@5:0.4387,NDCG@5:0.3126) [0.2 s] *
+INFO:root:Epoch 19    loss=0.1617 [9.2 s]	dev=(HR@5:0.4397,NDCG@5:0.3143) [0.2 s] *
+INFO:root:Epoch 20    loss=0.1550 [9.1 s]	dev=(HR@5:0.4411,NDCG@5:0.3153) [0.2 s] *
+INFO:root:Epoch 21    loss=0.1497 [9.1 s]	dev=(HR@5:0.4425,NDCG@5:0.3161) [0.2 s] *
+INFO:root:Epoch 22    loss=0.1455 [9.3 s]	dev=(HR@5:0.4445,NDCG@5:0.3177) [0.2 s] *
+INFO:root:Epoch 23    loss=0.1407 [9.2 s]	dev=(HR@5:0.4449,NDCG@5:0.3186) [0.2 s] *
+INFO:root:Epoch 24    loss=0.1366 [9.1 s]	dev=(HR@5:0.4457,NDCG@5:0.3193) [0.2 s] *
+INFO:root:Epoch 25    loss=0.1326 [9.8 s]	dev=(HR@5:0.4465,NDCG@5:0.3197) [0.2 s] *
+INFO:root:Epoch 26    loss=0.1305 [8.8 s]	dev=(HR@5:0.4471,NDCG@5:0.3208) [0.2 s] *
+INFO:root:Epoch 27    loss=0.1268 [9.1 s]	dev=(HR@5:0.4472,NDCG@5:0.3206) [0.2 s]
+INFO:root:Epoch 28    loss=0.1234 [9.1 s]	dev=(HR@5:0.4481,NDCG@5:0.3217) [0.2 s] *
+INFO:root:Epoch 29    loss=0.1200 [9.1 s]	dev=(HR@5:0.4492,NDCG@5:0.3224) [0.2 s] *
+INFO:root:Epoch 30    loss=0.1172 [9.0 s]	dev=(HR@5:0.4503,NDCG@5:0.3231) [0.2 s] *
+INFO:root:Epoch 31    loss=0.1139 [8.8 s]	dev=(HR@5:0.4511,NDCG@5:0.3242) [0.2 s] *
+INFO:root:Epoch 32    loss=0.1115 [9.1 s]	dev=(HR@5:0.4530,NDCG@5:0.3254) [0.2 s] *
+INFO:root:Epoch 33    loss=0.1084 [9.1 s]	dev=(HR@5:0.4535,NDCG@5:0.3259) [0.2 s] *
+INFO:root:Epoch 34    loss=0.1064 [6.5 s]	dev=(HR@5:0.4545,NDCG@5:0.3263) [0.2 s] *
+INFO:root:Epoch 35    loss=0.1044 [9.0 s]	dev=(HR@5:0.4561,NDCG@5:0.3274) [0.2 s] *
+INFO:root:Epoch 36    loss=0.1027 [8.9 s]	dev=(HR@5:0.4568,NDCG@5:0.3277) [0.2 s] *
+INFO:root:Epoch 37    loss=0.0995 [9.1 s]	dev=(HR@5:0.4580,NDCG@5:0.3279) [0.2 s] *
+INFO:root:Epoch 38    loss=0.0990 [9.4 s]	dev=(HR@5:0.4590,NDCG@5:0.3289) [0.2 s] *
+INFO:root:Epoch 39    loss=0.0976 [9.3 s]	dev=(HR@5:0.4590,NDCG@5:0.3289) [0.2 s]
+INFO:root:Epoch 40    loss=0.0954 [9.4 s]	dev=(HR@5:0.4590,NDCG@5:0.3288) [0.2 s]
+INFO:root:Epoch 41    loss=0.0938 [9.2 s]	dev=(HR@5:0.4594,NDCG@5:0.3294) [0.2 s] *
+INFO:root:Epoch 42    loss=0.0940 [9.1 s]	dev=(HR@5:0.4607,NDCG@5:0.3304) [0.2 s] *
+INFO:root:Epoch 43    loss=0.0919 [9.5 s]	dev=(HR@5:0.4598,NDCG@5:0.3298) [0.2 s]
+INFO:root:Epoch 44    loss=0.0905 [9.6 s]	dev=(HR@5:0.4603,NDCG@5:0.3302) [0.2 s]
+INFO:root:Epoch 45    loss=0.0892 [4.4 s]	dev=(HR@5:0.4611,NDCG@5:0.3309) [0.2 s] *
+INFO:root:Epoch 46    loss=0.0896 [7.4 s]	dev=(HR@5:0.4627,NDCG@5:0.3320) [0.2 s] *
+INFO:root:Epoch 47    loss=0.0881 [5.2 s]	dev=(HR@5:0.4611,NDCG@5:0.3312) [0.2 s]
+INFO:root:Epoch 48    loss=0.0860 [4.4 s]	dev=(HR@5:0.4609,NDCG@5:0.3310) [0.2 s]
+INFO:root:Epoch 49    loss=0.0866 [7.2 s]	dev=(HR@5:0.4634,NDCG@5:0.3323) [0.2 s] *
+INFO:root:Epoch 50    loss=0.0849 [9.2 s]	dev=(HR@5:0.4629,NDCG@5:0.3321) [0.2 s]
+INFO:root:Epoch 51    loss=0.0856 [5.5 s]	dev=(HR@5:0.4619,NDCG@5:0.3321) [0.2 s]
+INFO:root:Epoch 52    loss=0.0839 [9.7 s]	dev=(HR@5:0.4630,NDCG@5:0.3320) [0.2 s]
+INFO:root:Epoch 53    loss=0.0835 [9.0 s]	dev=(HR@5:0.4628,NDCG@5:0.3319) [0.2 s]
+INFO:root:Epoch 54    loss=0.0820 [4.2 s]	dev=(HR@5:0.4628,NDCG@5:0.3320) [0.2 s]
+INFO:root:Epoch 55    loss=0.0826 [6.6 s]	dev=(HR@5:0.4628,NDCG@5:0.3320) [0.2 s]
+INFO:root:Epoch 56    loss=0.0813 [9.2 s]	dev=(HR@5:0.4623,NDCG@5:0.3322) [0.2 s]
+INFO:root:Epoch 57    loss=0.0815 [9.2 s]	dev=(HR@5:0.4624,NDCG@5:0.3326) [0.2 s] *
+INFO:root:Epoch 58    loss=0.0796 [9.5 s]	dev=(HR@5:0.4623,NDCG@5:0.3328) [0.2 s] *
+INFO:root:Epoch 59    loss=0.0800 [9.4 s]	dev=(HR@5:0.4628,NDCG@5:0.3332) [0.2 s] *
+INFO:root:Epoch 60    loss=0.0794 [9.5 s]	dev=(HR@5:0.4633,NDCG@5:0.3329) [0.2 s]
+INFO:root:Epoch 61    loss=0.0803 [9.6 s]	dev=(HR@5:0.4624,NDCG@5:0.3331) [0.2 s]
+INFO:root:Epoch 62    loss=0.0789 [9.4 s]	dev=(HR@5:0.4641,NDCG@5:0.3333) [0.2 s] *
+INFO:root:Epoch 63    loss=0.0775 [9.6 s]	dev=(HR@5:0.4630,NDCG@5:0.3329) [0.2 s]
+INFO:root:Epoch 64    loss=0.0773 [9.5 s]	dev=(HR@5:0.4637,NDCG@5:0.3332) [0.2 s]
+INFO:root:Epoch 65    loss=0.0782 [9.4 s]	dev=(HR@5:0.4645,NDCG@5:0.3340) [0.2 s] *
+INFO:root:Epoch 66    loss=0.0776 [9.4 s]	dev=(HR@5:0.4653,NDCG@5:0.3343) [0.2 s] *
+INFO:root:Epoch 67    loss=0.0772 [9.5 s]	dev=(HR@5:0.4651,NDCG@5:0.3345) [0.2 s] *
+INFO:root:Epoch 68    loss=0.0757 [9.4 s]	dev=(HR@5:0.4655,NDCG@5:0.3348) [0.2 s] *
+INFO:root:Epoch 69    loss=0.0762 [9.4 s]	dev=(HR@5:0.4651,NDCG@5:0.3352) [0.2 s] *
+INFO:root:Epoch 70    loss=0.0762 [9.3 s]	dev=(HR@5:0.4654,NDCG@5:0.3354) [0.2 s] *
+INFO:root:Epoch 71    loss=0.0764 [9.3 s]	dev=(HR@5:0.4656,NDCG@5:0.3353) [0.2 s]
+INFO:root:Epoch 72    loss=0.0758 [9.5 s]	dev=(HR@5:0.4645,NDCG@5:0.3341) [0.2 s]
+INFO:root:Epoch 73    loss=0.0762 [9.6 s]	dev=(HR@5:0.4636,NDCG@5:0.3335) [0.2 s]
+INFO:root:Epoch 74    loss=0.0746 [9.8 s]	dev=(HR@5:0.4653,NDCG@5:0.3345) [0.2 s]
+INFO:root:Epoch 75    loss=0.0741 [9.2 s]	dev=(HR@5:0.4646,NDCG@5:0.3346) [0.2 s]
+INFO:root:Epoch 76    loss=0.0754 [9.3 s]	dev=(HR@5:0.4649,NDCG@5:0.3349) [0.2 s]
+INFO:root:Epoch 77    loss=0.0742 [9.3 s]	dev=(HR@5:0.4650,NDCG@5:0.3348) [0.2 s]
+INFO:root:Epoch 78    loss=0.0743 [9.1 s]	dev=(HR@5:0.4660,NDCG@5:0.3356) [0.2 s] *
+INFO:root:Epoch 79    loss=0.0735 [9.0 s]	dev=(HR@5:0.4665,NDCG@5:0.3356) [0.2 s]
+INFO:root:Epoch 80    loss=0.0751 [9.0 s]	dev=(HR@5:0.4681,NDCG@5:0.3360) [0.2 s] *
+INFO:root:Epoch 81    loss=0.0739 [9.4 s]	dev=(HR@5:0.4674,NDCG@5:0.3359) [0.2 s]
+INFO:root:Epoch 82    loss=0.0735 [9.4 s]	dev=(HR@5:0.4672,NDCG@5:0.3358) [0.2 s]
+INFO:root:Epoch 83    loss=0.0735 [9.3 s]	dev=(HR@5:0.4660,NDCG@5:0.3353) [0.2 s]
+INFO:root:Epoch 84    loss=0.0737 [9.4 s]	dev=(HR@5:0.4673,NDCG@5:0.3362) [0.2 s] *
+INFO:root:Epoch 85    loss=0.0734 [9.4 s]	dev=(HR@5:0.4675,NDCG@5:0.3366) [0.2 s] *
+INFO:root:Epoch 86    loss=0.0729 [9.0 s]	dev=(HR@5:0.4665,NDCG@5:0.3366) [0.2 s]
+INFO:root:Epoch 87    loss=0.0727 [9.1 s]	dev=(HR@5:0.4667,NDCG@5:0.3364) [0.2 s]
+INFO:root:Epoch 88    loss=0.0722 [9.1 s]	dev=(HR@5:0.4663,NDCG@5:0.3364) [0.2 s]
+INFO:root:Epoch 89    loss=0.0727 [9.0 s]	dev=(HR@5:0.4670,NDCG@5:0.3365) [0.2 s]
+INFO:root:Epoch 90    loss=0.0729 [9.4 s]	dev=(HR@5:0.4658,NDCG@5:0.3361) [0.2 s]
+INFO:root:Epoch 91    loss=0.0715 [9.4 s]	dev=(HR@5:0.4667,NDCG@5:0.3362) [0.2 s]
+INFO:root:Epoch 92    loss=0.0730 [9.5 s]	dev=(HR@5:0.4673,NDCG@5:0.3362) [0.2 s]
+INFO:root:Epoch 93    loss=0.0725 [9.3 s]	dev=(HR@5:0.4655,NDCG@5:0.3353) [0.2 s]
+INFO:root:Epoch 94    loss=0.0724 [9.3 s]	dev=(HR@5:0.4669,NDCG@5:0.3360) [0.2 s]
+INFO:root:Early stop at 94 based on dev result.
+INFO:root:
+Best Iter(dev)=   85	 dev=(HR@5:0.4675,NDCG@5:0.3366) [859.6 s] 
+INFO:root:Load model from ../model/XSimGCL/XSimGCL__Grocery_and_Gourmet_Food__0__lr=0.001__l2=1e-06__emb_size=64__n_layers=3__batch_size=256.pt
+INFO:root:
+Dev  After Training: (HR@5:0.4674,NDCG@5:0.3366,HR@10:0.5852,NDCG@10:0.3750,HR@20:0.6916,NDCG@20:0.4018,HR@50:0.8550,NDCG@50:0.4341)
+INFO:root:
+Test After Training: (HR@5:0.3918,NDCG@5:0.2716,HR@10:0.5140,NDCG@10:0.3113,HR@20:0.6285,NDCG@20:0.3402,HR@50:0.8273,NDCG@50:0.3793)
+INFO:root:Saving top-100 recommendation results to: ../log/XSimGCL/XSimGCL__Grocery_and_Gourmet_Food__0__lr=0/rec-XSimGCL-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/XSimGCL/XSimGCL__Grocery_and_Gourmet_Food__0__lr=0/rec-XSimGCL-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2025-12-09 20:49:13 ---------------------------------------------
