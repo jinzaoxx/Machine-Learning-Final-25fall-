@@ -102,13 +102,13 @@ ReChorus/
     
 - **XSimGCL (Ours)**
     
-    - _参数亮点:_ `eps=0.2`, `tau=0.1`
+    - _参数亮点:_ `eps=0.1`, `tau=0.1`
         
     
     Bash
     
     ```
-    python src/main.py --model_name XSimGCL --dataset Grocery_and_Gourmet_Food --emb_size 64 --lr 1e-3 --l2 1e-6 --eps 0.2 --tau 0.1 --random_seed 0 --gpu 0 --num_workers 0
+    python src/main.py --model_name XSimGCL --dataset Grocery_and_Gourmet_Food --emb_size 64 --lr 1e-3 --l2 1e-6 --eps 0.1 --tau 0.1 --random_seed 0 --gpu 0 --num_workers 0
     ```
     
 
@@ -137,7 +137,7 @@ ReChorus/
     Bash
     
     ```
-    python src/main.py --model_name XSimGCL --dataset MovieLens_1M --emb_size 64 --lr 1e-3 --l2 1e-6 --eps 0.2 --tau 0.1 --random_seed 0 --gpu 0 --num_workers 0
+    python src/main.py --model_name XSimGCL --dataset MovieLens_1M --emb_size 64 --lr 1e-3 --l2 1e-6 --eps 0.1 --tau 0.1 --random_seed 0 --gpu 0 --num_workers 0
     ```
     
 
